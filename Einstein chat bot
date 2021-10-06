@@ -5,7 +5,7 @@ video: https://www.youtube.com/watch?v=YPQqNFXRCiQ
 3.
 # KEY TERMS
 -----------
-1. Dialogs : Dialog(action -> Message, Question, action[apex @invocable], rule[conditon]), Intent(synonym of user input - at least 20)
+1. Dialogs : Dialog(action -> Message, Question, action[apex @invocable], rule[conditon]), Intent(synonym of user input - at least 20), Next step
 2. Slot : veriable
 3. Entity: datatype 
 4. Performance : for debug
