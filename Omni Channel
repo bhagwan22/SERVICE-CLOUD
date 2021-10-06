@@ -1,0 +1,11 @@
+Omin channel
+------------
+enable
+Service channel and which object on which it work
+queue
+routing configuration(routing module, unit capacity)
+presence Configuration(overall capacity of agent)
+presence status 
+profile(give access to presence status via profile)
+channel supervisor
+Omni channel reports(available)
