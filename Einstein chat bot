@@ -12,4 +12,4 @@ video: https://www.youtube.com/watch?v=YPQqNFXRCiQ
 
 4. Start Train (for bot to train atleast there should be two dialog and both must have intent min of 20 each)
 5. Activate
-6. Assign the class and permission set 
+6. Assign the class and permission set (sfdc.chatbot.service.permset)
