@@ -1,0 +1,19 @@
+### FOR DIGITAL ENGAGEMENT
+
+1. Enable Digital engagement (Community)
+then >New >[select template] customer service
+copy the url of site
+https://hic-suppoer-community-developer-edition.ap27.force.com
+
+2. Go to chat with coustomer(recomended flow)
+and paste site url(in that way we do not need to add chat snipit to website)
+
+3. Now, Time to add the Chat widget URL to your site's security settings to allow live web chat.
+  a. copy chat api endpoint form chat sertting
+	  https://d.la2-c2-ukb.salesforceliveagent.com/chat/rest/
+  b. setup the community security & privacy -> security level to "Relaxed CSP: Permit Access to Inline Scripts and Allowed Hosts"
+  c. Then from "Trusted Sites for Scripts" add chat api endpoint copied above
+
+
+4. Finally, add the embadded service chat to your builder footer from available componenets
+
