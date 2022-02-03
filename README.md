@@ -1,6 +1,6 @@
 # SERVICE-CLOUD
 
-feature:
+feature: and Feature Licence
 1. Service Cloud Platform
 2. Service Cloud Messaging : sms, facebook, whatsaap
 3. Web or Mobile Apps(Emberded Service)
