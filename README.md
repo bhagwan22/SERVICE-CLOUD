@@ -7,7 +7,7 @@ feature: and Feature Licence
 4. Salesforce Self-Service Portal
 5. Service Cloud Chat: webChat
 6. Social Customer Service : conversation on social post
-7. Service Cloud Einstein: chatbot and routing
+7. Service Cloud Einstein: chatbot and routing, included with Chat and Messaging feature licence( https://help.salesforce.com/s/articleView?id=sf.bots_service_requirements.htm&type=5 )
 
 8. Omni-Channel
 9. Voice & Call Center
