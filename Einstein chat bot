@@ -1,7 +1,10 @@
 video: https://www.youtube.com/watch?v=YPQqNFXRCiQ
 
-1. Must have einsteing/messaging/chat licence
-2. enable Einstein Bot
+1. must enable Chat in your org. From Setup, enter Chat in the Quick Find box, then select Chat Settings. Check Enable Chat.
+    note: Even if you don’t plan on using Chat, you still need to enable it in order to use Einstein Bots.
+    
+2. Must have einsteing/messaging/chat licence
+3. enable Einstein Bot
 
 # KEY TERMS
 -----------
