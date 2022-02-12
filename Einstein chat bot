@@ -14,9 +14,11 @@ video: https://www.youtube.com/watch?v=YPQqNFXRCiQ
 5. Activate
 6. Assign the class and permission set (sfdc.chatbot.service.permset)
 
+Note: all the permission should be given by permission set: sfdc.chatbot.service.permset  (Like apex class, object etc)
 
-
-# Example: apex class to use in Einstein chat bot
+                                                # Example: apex class to use in Einstein chat bot #
+                                                
+                                                
 /*********************************************************************************************************
 * Description : controller for all apex actions called form Eva einstein bot
 * 
