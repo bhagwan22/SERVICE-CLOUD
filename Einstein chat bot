@@ -21,7 +21,7 @@ Note: all the permission should be given by permission set: sfdc.chatbot.service
                                                 
 /*********************************************************************************************************
 * Description : controller for all apex actions called form Eva einstein bot
-* 
+* check if Product is available in salesfoce or not
 * *******************************************************************************************************/
 public class einsteinChatBot_Controller {
     
