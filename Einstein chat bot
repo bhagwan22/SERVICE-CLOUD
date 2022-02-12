@@ -5,7 +5,7 @@ video: https://www.youtube.com/watch?v=YPQqNFXRCiQ
 3.
 # KEY TERMS
 -----------
-1. Dialogs : Dialog(action -> Message, Question, action[apex @invocable], rule[conditon]), Intent(synonym of user input - at least 20), Next step
+1. Dialogs : Dialog(action -> Message, Question, action[apex @invocable], rule[conditon]), Dialog Intent(synonym of user input - at least 20), Next step
 2. Slot : veriable
 3. Entity: datatype 
 4. Performance : for debug
@@ -13,3 +13,52 @@ video: https://www.youtube.com/watch?v=YPQqNFXRCiQ
 4. Start Train (for bot to train atleast there should be two dialog and both must have intent min of 20 each)
 5. Activate
 6. Assign the class and permission set (sfdc.chatbot.service.permset)
+
+
+
+# Example: apex class to use in Einstein chat bot
+/*********************************************************************************************************
+* Description : controller for all apex actions called form Eva einstein bot
+* 
+* *******************************************************************************************************/
+public class einsteinChatBot_Controller {
+    
+    // Custem result wrapper class: for output
+    public class InquireOutput {  
+        @InvocableVariable( required=true )  
+        public String sStatus;  
+    }  
+    
+    // Custem result wrapper class: for input
+    public class InquireInput {  
+        @InvocableVariable( required=true )  
+        public String sInquireProdName;  
+    } 
+    
+    @InvocableMethod(label='Check Available Product')
+    public static List < InquireOutput > checkAvailableProductByName(List<InquireInput> usrInptList){
+        List < InquireOutput > objOutputs = new List < InquireOutput >();
+        InquireOutput objOutput = new InquireOutput(); 
+        try{           
+            System.debug('@@@@@@@@@ apex called '+usrInptList);
+            Product2 prodct = [SELECT id,Name from product2 where name=:usrInptList[0].sInquireProdName Limit 1];
+            System.debug('@@@@@@# prodct=> '+prodct);
+            if(prodct==null){
+                objOutput.sStatus = 'Not Available';
+            }
+            else{
+                objOutput.sStatus = 'Available';
+            }
+            objOutputs.add(objOutput);
+            return objOutputs;
+        }
+        catch(Exception ex){
+            System.debug('@@@@@@@# EXCEPTION line => '+ex.getLineNumber()+' cause =>'+ex.getCause()+' msg => '+ex.getMessage());
+            objOutput.sStatus = 'Not Available';
+            objOutputs.add(objOutput);
+            return objOutputs;
+        }
+    }
+}
+
+
