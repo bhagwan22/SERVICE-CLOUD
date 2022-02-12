@@ -1,8 +1,8 @@
 video: https://www.youtube.com/watch?v=YPQqNFXRCiQ
 
-1. Must have einsteing licence
-2. enable
-3.
+1. Must have einsteing/messaging/chat licence
+2. enable Einstein Bot
+
 # KEY TERMS
 -----------
 1. Dialogs : Dialog(action -> Message, Question, action[apex @invocable], rule[conditon]), Dialog Intent(synonym of user input - at least 20), Next step
